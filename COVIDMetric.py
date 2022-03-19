@@ -1,12 +1,12 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+from links import *
+
 #import the whole CSV file
 raw = pd.read_csv (r'CDPHE_COVID19_Wastewater_Dashboard_Data (test).csv')
 data = pd.DataFrame(raw, columns= ['Date','SARS_CoV_2_copies_L'])
 #print(data)
-
-
 
 #data['Date'] = pd.to_datetime(data['Date'])
 #print(data)
@@ -17,9 +17,13 @@ plotdata = plotdata.set_index(pd.to_datetime(data['Date']))
 
 plotdata = plotdata.sort_values('Date')
 
+
+
 plt.plot(plotdata)
 plt.gcf().autofmt_xdate()
 plt.show()
+
+COcoviddata = https://opendata.arcgis.com/datasets/efd7f5f77efa4122a70a0c5c405ce8be_0.geojson
 
 #pull just the dates for processing
 #rawdates = pd.DataFrame(data, columns= ['Person Name','Country'])

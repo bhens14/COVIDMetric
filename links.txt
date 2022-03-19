@@ -1,2 +1,0 @@
-COwaterdata = https://opendata.arcgis.com/datasets/c6566d454edb47c680afe839a0b4fc26_0.geojson
-COcoviddata = https://opendata.arcgis.com/datasets/efd7f5f77efa4122a70a0c5c405ce8be_0.geojson
